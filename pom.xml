@@ -9,7 +9,7 @@
   <artifactId>joda-time-hibernate</artifactId>
   <packaging>jar</packaging>
   <name>Joda-Time-Hibernate</name>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.99.99-SNAPSHOT</version>
   <description>Contribution to Joda-Time that adds Hibernate support</description>
   <url>http://www.joda.org/joda-time-hibernate/</url>
 
@@ -334,7 +334,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.2</version>
+      <version>4.99.99-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -422,9 +422,13 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>nexus-snapshots</id>
+      <id>nexusServer</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
+    <repository>
+      <id>nexusServer</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
   </distributionManagement>
 
   <!-- ==================================================================== -->
