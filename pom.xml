@@ -514,6 +514,10 @@
             <updatePolicy>never</updatePolicy>
           </snapshots>
         </repository>
+        <repository>
+          <id>nexusServer</id>
+          <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </repository>
       </repositories>
     </profile>
   </profiles>
